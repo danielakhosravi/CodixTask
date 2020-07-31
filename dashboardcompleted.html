@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- https://fonts.google -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500&display=swap" rel="stylesheet">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light mb-3 ">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><img class="rounded-circle avatar" src="images/avatar-frank.png" /></a>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="#">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="#">Archive</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Nav End -->
+<!-- Secton body -->
+
+<div class="container-fluid">
+	
+ <div class="mb-3 mt-5 card">
+	<div class="card-header mb-3">
+		<div class=" pl-2  text-left">
+      <span class="account-type ml-2 pl-2 pr-2">CLASSICAL</span>
+      <button class="btn-sm btn btn-link">View all </button>    
+		  <h6 class="pl-2 ">Account number № 14902 <span class="text-muted">EUR - 1701230003 - TSCL DE01</span></h6>  
+    </div>      
+  </div>
+
+  <div class="row mb-3 ml-2 mr-2"> 
+		<div class="col-md-6 col-xl-3">
+			<div class="card mb-1 text-left card-first">
+				<div class=" pt-3 pl-3 pb-3">
+					<p class=" mb-1">Current balance</p>
+					<span class="balans">9500 EUR</span>
+				</div>			
+			</div>
+		</div>
+
+		<div class="col-md-6 col-xl-3">
+			<div class="card mb-1 text-left card-second">
+				<div class=" pt-3 pl-3 pb-3">
+					<p class=" mb-1">Financial limit</p>
+					<span class="limit"> 12500 EUR</span>
+				</div>			
+			</div>
+		</div>
+	                
+		<div class="col-md-6 col-xl-3">
+			<div class="card mb-1 text-left card-third">
+				<div class=" pt-3 pl-3 pb-3">
+					<p class=" mb-1">Due invoices</p>
+					<span class="due">12</span>
+				</div>			
+			</div>
+		</div>	
+
+		<div class="col-md-6 col-xl-3">
+			<div class="card mb-1 text-left card-fourth">
+				<div class=" pt-3 pl-3 pb-3">
+					<p class=" mb-1">Not due invoices </p>
+					<span class="not-due">43</span>
+				</div>			
+			</div>
+		</div>					
+  </div>
+ </div> 
+
+<div class="row">
+
+  <div class="col-xl-6 col-12 mb-2">
+    <div class="card mt-2 ">
+      <div class="card-header d-flex justify-content-between">
+      	<div class="d-inline-block"> 
+      	 <p class="card-title">Current daily chart</p>
+        </div>
+        <div class="dropdown responsive pr-2">
+          <button class="btn dropdown-toggle btn btn-link btn-icon " type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span><svg class="menu-icon" viewBox="0 0 512 512" class=""><path fill="currentColor" d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"></path></svg></span></button>
+      <div class="dropdown-menu mr-2">
+        <a class="dropdown-item" href="#">
+        <span><svg class="icon-file pr-2" viewBox="0 0 20 20"><path d="M17.453,12.691V7.723 M17.453,12.691V7.723 M1.719,12.691V7.723 M18.281,12.691V7.723 M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555 M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484 M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555 M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484 M7.309,13.312h5.383c0.229,0,0.414-0.187,0.414-0.414s-0.186-0.414-0.414-0.414H7.309c-0.228,0-0.414,0.187-0.414,0.414S7.081,13.312,7.309,13.312 M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555 M16.625,6.066h-1.449V3.168c0-0.228-0.186-0.414-0.414-0.414H5.238c-0.228,0-0.414,0.187-0.414,0.414v2.898H3.375c-0.913,0-1.656,0.743-1.656,1.656v4.969c0,0.913,0.743,1.656,1.656,1.656h1.449v2.484c0,0.228,0.187,0.414,0.414,0.414h9.523c0.229,0,0.414-0.187,0.414-0.414v-2.484h1.449c0.912,0,1.656-0.743,1.656-1.656V7.723C18.281,6.81,17.537,6.066,16.625,6.066 M5.652,3.582h8.695v2.484H5.652V3.582zM14.348,16.418H5.652v-4.969h8.695V16.418z M17.453,12.691c0,0.458-0.371,0.828-0.828,0.828h-1.449v-2.484c0-0.228-0.186-0.414-0.414-0.414H5.238c-0.228,0-0.414,0.186-0.414,0.414v2.484H3.375c-0.458,0-0.828-0.37-0.828-0.828V7.723c0-0.458,0.371-0.828,0.828-0.828h13.25c0.457,0,0.828,0.371,0.828,0.828V12.691z M7.309,13.312h5.383c0.229,0,0.414-0.187,0.414-0.414s-0.186-0.414-0.414-0.414H7.309c-0.228,0-0.414,0.187-0.414,0.414S7.081,13.312,7.309,13.312M7.309,15.383h5.383c0.229,0,0.414-0.187,0.414-0.414s-0.186-0.414-0.414-0.414H7.309c-0.228,0-0.414,0.187-0.414,0.414S7.081,15.383,7.309,15.383 M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555 M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484 M12.691,12.484H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,12.484,12.691,12.484M12.691,14.555H7.309c-0.228,0-0.414,0.187-0.414,0.414s0.187,0.414,0.414,0.414h5.383c0.229,0,0.414-0.187,0.414-0.414S12.92,14.555,12.691,14.555"></path></svg></span>Print</a>
+       <a class="dropdown-item" href="#">
+       <span ><svg class="icon-file pr-2" viewBox="0 0 20 20"><path d="M14.68,12.621c-0.9,0-1.702,0.43-2.216,1.09l-4.549-2.637c0.284-0.691,0.284-1.457,0-2.146l4.549-2.638c0.514,0.661,1.315,1.09,2.216,1.09c1.549,0,2.809-1.26,2.809-2.808c0-1.548-1.26-2.809-2.809-2.809c-1.548,0-2.808,1.26-2.808,2.809c0,0.38,0.076,0.741,0.214,1.073l-4.55,2.638c-0.515-0.661-1.316-1.09-2.217-1.09c-1.548,0-2.808,1.26-2.808,2.809s1.26,2.808,2.808,2.808c0.9,0,1.702-0.43,2.217-1.09l4.55,2.637c-0.138,0.332-0.214,0.693-0.214,1.074c0,1.549,1.26,2.809,2.808,2.809c1.549,0,2.809-1.26,2.809-2.809S16.229,12.621,14.68,12.621M14.68,2.512c1.136,0,2.06,0.923,2.06,2.06S15.815,6.63,14.68,6.63s-2.059-0.923-2.059-2.059S13.544,2.512,14.68,2.512M5.319,12.061c-1.136,0-2.06-0.924-2.06-2.06s0.923-2.059,2.06-2.059c1.135,0,2.06,0.923,2.06,2.059S6.454,12.061,5.319,12.061M14.68,17.488c-1.136,0-2.059-0.922-2.059-2.059s0.923-2.061,2.059-2.061s2.06,0.924,2.06,2.061S15.815,17.488,14.68,17.488"></path></svg></span> Share</a>
+       <a class="dropdown-item" href="#"> 
+      <span><svg class="icon-file pr-2" viewBox="0 0 20 20"><path d="M17.388,4.751H2.613c-0.213,0-0.389,0.175-0.389,0.389v9.72c0,0.216,0.175,0.389,0.389,0.389h14.775c0.214,0,0.389-0.173,0.389-0.389v-9.72C17.776,4.926,17.602,4.751,17.388,4.751 M16.448,5.53L10,11.984L3.552,5.53H16.448zM3.002,6.081l3.921,3.925l-3.921,3.925V6.081z M3.56,14.471l3.914-3.916l2.253,2.253c0.153,0.153,0.395,0.153,0.548,0l2.253-2.253l3.913,3.916H3.56z M16.999,13.931l-3.921-3.925l3.921-3.925V13.931z"></path></svg></span>Send an email</a>
+       <button class="pl-4 btn-shadow btn-sm btn btn-link">View more details</button>
+	   </div>
+    </div>
+   </div>
+     <div class="card-body pt-0">
+        <img src="images/chart2.jpg">
+     </div>
+ </div>
+</div>
+
+  <div class="col-xl-6 col-12">
+    <div class="row mt-2">
+      <div class="col-md-6 col-12 mb-2">
+        <div class="card card-third">
+          <div class="card-header">
+            <p class="card-title">Due invoice chart <span class="due">12</span></p>
+           </div>
+              <div class="card-body pt-0">
+                <img src="images/chart3.jpg">
+              </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-12 mb-2">
+       <div class="card card-fourth">
+        <div class="card-header">
+         <p class="card-title">Not due invoices <span class="not-due">43</span></p>
+        </div>
+         <div class="card-body pt-0">
+         <img src="images/chart5.jpg">
+        </div>
+       </div>
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col mb-2">
+      <div class="card">
+        <div class="table-responsive">
+          <table class="table mb-0">
+            <tbody>
+              <tr>
+                <th scope="row" class="border-top-0">
+                <h6>Total of processed documents</h6></th>
+              </tr>
+               <tr>
+                <th scope="row"><span class="documents-total">73%</span></th>
+              </tr>
+              <tr>
+                <td scope="row">
+                <button type="button" class="btn btn-success btn-lg btn-block">Create Report </button></td>
+                <td class="">
+                <button type="button" class="btn btn-primary btn-lg btn-block">View All Documents</button></td>
+               </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="row">
+
+  <div class="col-12 mb-2">
+ 	  <div class="card">
+      <div class="card-header">
+        <h6 class="card-title text-center">Average range financial transactions</h6>
+      </div>
+      <div class="card-content">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4 col-12 border-right-1 text-center">
+              <p class="blue-grey lighten-2 mb-0 border-top-1">Per day</p>
+              <img src="images/chart1.jpg"> 
+            </div>
+            <div class="col-md-4 col-12 border-right-blue-grey  text-center border-top-1">
+              <p class="blue-grey lighten-2 mb-0">Per week</p>
+              <img src="images/chart6.jpg"> 
+            </div>
+            <div class="col-md-4 col-12 text-center">
+              <p class="blue-grey lighten-2 mb-0">Per month</p>
+              <img src="images/chart4.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<!-- End Secton body -->
+<!-- Footer -->
+<footer class="page-footer mt-3">
+  <div class="container ">
+   <div class="row pt-3 pb-3">
+      <div class="col-md-8 ">
+        <div class="">
+            <a class="pr-3 footer-list" href="#">Support</a>
+            <a class="pr-3 footer-list" href="#">Knowledge Base</a>
+            <a class="pr-3 footer-list" href="#">Refer a friend</a>
+            <a class="pr-3 footer-list" href="#">Privacy Policy</a>
+            <a class="pr-3 footer-list" href="#">Privacy Policy</a>
+            <a class="pr-3 footer-list" href="#">Our Partners</a>
+        </div>
+      </div>
+         <div class="col-md-4 ">
+        <div class="social-media">
+            <a class="pr-3 footer-list" href="#"><img src="images/android.png"></a>
+            <a class="pr-3 footer-list" href="#"><img src="images/apple.png"></a>
+            <a class="pr-3 footer-list" href="#"><img src="images/facebook.png"></a>
+            <a class="pr-3 footer-list" href="#"><img src="images/call.png"></a>
+            <a class="pr-3 footer-list" href="#"><img src="images/linkedIn.png"></a>
+            <a class="pr-3 footer-list" href="#"><img src="images/whats up.png"></a>
+        </div>
+      </div>
+
+   </div>
+  </div>
+  <div class="footer-copyright text-center bg-dark py-3">© 2020 Copyright:All rights reserved
+  </div>
+</footer>
+</body>
+</html>
